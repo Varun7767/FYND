@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      function isEvenOrOdd(num, callback) {
+        if (35 % 2 === 0) {
+          callback(true);
+        } else {
+          callback(false);
+        }
+      }
+
+      function handleResult(result) {
+        document.getElementById("demo").innerHTML = result;
+      }
+
+      isEvenOrOdd(1, handleResult);
+      isEvenOrOdd(0,  handleResult);
+    </script>
+  </body>
+</html>
