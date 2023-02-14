@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h2>js</h2>
+        <p id="test"></p>
+        <script>
+            let x=10;
+            var y=10;
+            {
+                let x=2; //change is not allowed
+                var y=20;  //change is allowed
+            }
+            // x is 10
+            // y is 20
+            document.getElementById("test").innerHTML=x;
+            document.getElementById("test").innerHTML=y;
+
+        </script>
+    </body>
+</html>
