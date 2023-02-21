@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Margarine&family=Righteous&display=swap" rel="stylesheet">
+    <title>Online Platform</title>
+</head>
+<body>
+    <style>
+		@media only screen and (min-width:200px) {
+        nav{
+	width: 100%;
+	height: 70px;
+	border-bottom: 5px solid black;
+	box-shadow: 2px 0px 5px grey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	top:0;
+	z-index: 1;
+	background:red;
+
+		}
+}
+.logo{
+	font-size: 40px;
+	font-weight: bold;
+    font-family: cursive;
+}
+
+.menu a{
+	text-decoration:wavy;
+	font-size: 20px;
+	color: black;
+	padding: 10px 20px;
+	margin:5px;
+	font-weight: bold;
+    font: sofia;
+	background: black;
+	color: white;
+}
+
+.menu a:hover{
+    background-color: blue;
+    text-decoration: wavy;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	transform-origin: center;
+	perspective: 2000px;
+	margin-bottom: 30px;
+}
+
+.left{
+	flex-basis: 50%;
+	animation: animate 3s linear infinite;
+}
+.left img{
+	width: 100%;
+	padding-top: 100px;
+}
+
+.right{
+	flex-basis: 50%;
+	max-width: 400px;
+	margin-left: 100px;
+}
+
+.right h1{
+	font-size: 50px;
+}
+.right p{
+	font-size: 25px;
+	margin:20px 0px;
+}
+
+button{
+	background: black;
+	color: white;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+
+#featured{
+	padding: 30px 0px;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+.section1{
+	display: grid;
+	grid-template-columns: repeat(4,20%);
+	grid-auto-rows: minmax(200px,auto);
+	grid-gap: 1em;
+	justify-content: center;
+	margin-top:10px;
+	align-items: center;
+}	
+.box1{
+	border:1px solid black;
+	position: relative;
+	overflow: hidden;
+}
+.box1 img{
+	width: 100%;
+}
+
+.box{
+    grid-row: 1/3;
+	grid-column: 1/3;
+	border:1px solid black;
+	position: relative;
+	overflow: hidden;
+}
+
+.price{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: black;
+	color: white;
+	font-size: 20px;
+
+}
+
+#men{
+	padding: 80px 0px;
+}
+
+.men-row{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.men-box{
+	flex-basis: 15%;
+	box-shadow: 2px 3px 5px grey;
+	padding: 10px;
+	text-align: center;
+}
+
+.men-box img{
+	width: 100%;
+}
+.men-box h2{
+	margin:20px 0px;
+}
+.men-box h3{
+	background: black;
+	color: white;
+	padding: 10px;
+}
+.men-box:hover{
+	transform: translateY(20px);
+	transition: 0.4s ease;
+}
+
+#footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: black;
+	color: white;
+	padding: 10px;
+	margin-top: 20px;
+}				
+</style>
+
+<!-- header Section -->
+	<header id="Home">
+    <nav>
+		<div>
+			<img src="./logo1.png" alt="" height="50px
+            ">
+		</div>
+		<div class="logo">E-Commerce Website </div>
+		<div class="menu">
+			<a href="#home">Home</a>
+			<a href="#featured">Featured</a>
+			<a href="#men">Men</a>
+			<a href="#women">Women</a>
+			<a href="#">Shop</a>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="left">
+			<img src="product1.png">
+		</div>
+		<div class="right">
+			<h1>Best Festival Offers</h1>
+			<p>
+				We are providing best quality materials. We have best quality clothes, shoes for man and womens.
+			</p>
+			<p>
+				50% Discount!!!
+			</p>
+			<button>Shop</button><br>
+			<img src="icon.png">
+		</div>
+	</div>
+</header>
+<!-- Featured Section -->
+<section id="featured">
+	<h1>Featured</h1>
+	<div class="section1">
+	<div class="box">
+		<img src="wproduct2.jpg">
+		<div class="price">Price: 349 Rs</div>
+	</div>
+	<div class="box1">
+		<img src="product4.jpg">
+		<div class="price">Price: 399 Rs</div>
+	</div>
+	<div class="box1">
+		<img src="wproduct4.jpg">
+		<div class="price">Price: 449 Rs</div>
+	</div>
+	<div class="box1">
+		<img src="product5.jpg">
+		<div class="price">Price: 499 Rs</div>
+	</div>
+	<div class="box1">
+		<img src="wproduct3.jpg">
+		<div class="price">Price: 599 Rs</div>
+	</div>
+	</div>
+</section>
+<!-- Men Section -->
+<h1>Men Section</h1>
+<section id="men">
+	<div class="men-row">
+		<div class="men-box">
+			<img src="product1.png">
+				<h2>Puma Shirt<br>199 Rs</h2>
+			<h3>Add to cart </h3>
+		</div>
+		<div class="men-box">
+			<img src="product2.jpg">
+				<h2>Adidas Shirt<br>299 Rs</h2>
+			<h3>Add to cart </h3>
+		</div>
+		<div class="men-box">
+			<img src="product3.jpg">
+				<h2>Peter England Shirt<br>349 Rs</h2>
+			<h3>Add to cart </h3>
+		</div>
+		<div class="men-box">
+			<img src="product4.jpg">
+				<h2>Allen Solley Shirt<br>399 Rs</h2>
+			<h3>Add to cart </h3>
+		</div>
+		<div class="men-box">
+			<img src="product5.jpg">
+				<h2>U. S. Polo Shirt<br>499 Rs</h2>
+			<h3>Add to cart </h3>
+		</div>
+	</div>
+</section>
+
+
+<!-- Women Section -->
+<h1>Women Section</h1>
+<section id="women">
+	<div class="men-row">
+		<div class="men-box">
+			<img src="wproduct1.png">
+				<h2>Puma Shirt<br>349 Rs</h2>
+			<h3>Add to cart </h3>
+		</div>
+		<div class="men-box">
+			<img src="wproduct2.jpg">
+				<h2>Adidas Shirt<br>349 Rs</h2>
+			<h3>Add to cart </h3>
+		</div>
+		<div class="men-box">
+			<img src="wproduct3.jpg">
+				<h2>Peter England Shirt<br>599 Rs</h2>
+			<h3>Add to cart </h3>
+		</div>
+		<div class="men-box">
+			<img src="wproduct4.jpg">
+				<h2>Allen Solley Shirt<br>449 Rs</h2>
+			<h3>Add to cart </h3>
+		</div>
+		<div class="men-box">
+			<img src="wproduct5.png">
+				<h2>U. S. Polo Shirt<br>499 Rs</h2>
+			<h3>Add to cart </h3>
+		</div>
+	</div>
+</section>
+
+<!-- Footer Section -->
+<section id="footer">
+	<h2>Developed by Varun Rajeshirke</h2>
+	<img src="icon.png">
+</section>
+</body>
+</html>
