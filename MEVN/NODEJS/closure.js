@@ -6,7 +6,7 @@ var alert= require('alert');
 function init()   //function1-outer/parent
 {  //initialization
 
-        var name="VARUN"; // name is a local variable created by init 
+        var name="SIDDHU"; // name is a local variable created by init 
         function displayName() { // displayName() is the inner function, a closure
         //execution:output
         alert(name);
