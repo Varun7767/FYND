@@ -15,7 +15,7 @@ function readFirstFiveCallback(error,filedata) {
 
     const Lines = filedata.toString().split("\n");
 
-    Lines.slice(0,5).forEach((line) => {
+    Lines.slice(0,6).forEach((line) => {
         console.log(line);
     })
 }
